@@ -9,11 +9,13 @@ public interface EntregaRepositoryPort {
 
   EntregaDatabaseDto save(EntregaDatabaseDto entrega) throws PersistedDatabaseException;
 
-//  EntregaDatabaseDto findById(long id) throws ResourceNotFoundDatabaseException;
-//
-//  List<EntregaDatabaseDto> findAll(EntregaDatabaseDto entrega);
-//
-//  EntregaDatabaseDto update(long id, EntregaDatabaseDto entrega);
-//
-//  void delete(long id);
+  EntregaDatabaseDto findById(long id) throws ResourceNotFoundDatabaseException;
+
+  List<EntregaDatabaseDto> findAll();
+
+  List<EntregaDatabaseDto> findByCep(String cep);
+
+  EntregaDatabaseDto update(long id, EntregaDatabaseDto entrega);
+
+  void delete(long id);
 }
