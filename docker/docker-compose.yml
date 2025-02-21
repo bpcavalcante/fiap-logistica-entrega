@@ -8,6 +8,6 @@ services:
       POSTGRES_PASSWORD: root
       POSTGRES_DB: logisticadb
     ports:
-      - 5432:5432
+      - 5453:5432
     volumes:
       - ./postgres:/var/lib/postgresql/data
